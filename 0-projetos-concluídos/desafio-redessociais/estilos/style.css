@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+*{
+    /* Config Globais */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    /* Config para dimensões completas html e body */
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+main{
+    /* Config para dimensões completas html e body */
+    height: 100vh;
+    position: relative;
+    
+
+}
+
+body{
+    /* Conteúdo e densões do conteúdo do background do body*/
+    background: url("../arquivos-desafio/imagens/fundo-madeira.jpg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section#telefone{
+    /* Posicionamento da sextion Telefone centralizado */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /* --- */
+
+    /* Dimensões da section Telefone  */
+    height: 627px;
+    width: 311px;
+    /* --- */
+
+
+    /* Conteúdo section Telefone  */
+    background:url(../arquivos-desafio/imagens/frame-iphone.png) no-repeat;
+   
+    /* --- */
+
+    
+
+}
+
+iframe#tela{
+    /* Posicionamento da Iframe Tela */
+    position:relative;
+    top: 80px;
+    left: 22px;
+
+    /* Dimensões da section Telefone  */
+    height: 471px;
+    width: 267px;
+}
+
+section#redes-sociais img{
+    /* Dimensões da section Redes Sociais  */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    /* Posicionamento da section Redes sociais  */
+    margin: 10px;
+
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399);
+    box-sizing: border-box;/* <- torna a borda conteúdo da box e não parte de fora da box  */
+
+}
+
+section#redes-sociais{
+    /* Psosicionamento dos links das redes sociais */
+    text-align: right;
+
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.994);
+
+    transform: translate(-3PX, -3PX); /*MOVIMENTAR O BOTÃO COM A PASSAGEM DO MOUSE  */
+
+    transition: transform .1s, border 1s;/*tempo dde movimentação do transform */
+
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.591);
+}

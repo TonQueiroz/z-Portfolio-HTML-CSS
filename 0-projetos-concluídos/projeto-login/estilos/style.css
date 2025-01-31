@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+
+/* Folha de Estilo Padrão*/
+
+/*
+Paleta de Cores
+Verde: #40a09d
+lilas: #5f2c82
+
+*/
+
+*{ 
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+    
+
+:root {
+
+    --cor1:#5f2c82;
+    --cor2:#40a09d;
+
+    --fontepadrao:Arial, Helvetica, sans-serif;
+    --fontetit:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+    body, html{ 
+        background-color: var(--cor1);
+        font-family: var(--fontepadrao);
+        
+    }
+
+    main{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    
+    
+    section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+             
+        overflow: hidden;
+
+
+        border-radius: 30px 30px;
+        width: 250px;
+        height: 510px;
+        
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.523);
+
+        transform: translate(-50%, -50%);   
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
+        
+
+    }
+
+    div > h1 {
+        text-align: center;
+    }
+
+    main  div#divlogin{  
+        display: block;      
+        height: 315px;        
+        padding: 15px;
+        background-color: aliceblue;      
+        
+        
+        
+    }
+    
+    main  div#divimagem { 
+        display: block;       
+        height: 200px;
+        width: 100%;
+        background-image: url(../Imagens/pexels-dmitry-zvolskiy-1544420.jpg);
+        background-repeat:  no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #40a09d;
+        
+    }
+
+    form { 
+        text-align: center;
+        padding: 6px;
+    }  
+    
+    form > p.campo {
+        display: block;
+        background-color: var(--cor1);
+        color: white;
+        height: 70px;
+        border-radius: 5px;
+        margin: 5px 0px;
+
+    }
+
+    form p label > span{
+        
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+
+    }
+
+    p.campo input{
+        background-color: #ffffff;
+        font-size: 1em;
+        width: calc(100% - 90px);
+        
+
+        
+    height: 30%;
+    border-radius: 5px;
+    transform: translatey( -5.5px);
+    }
+
+    form > input[type=submit]{
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: #40a09d;
+        cursor:pointer;
+        color: white;
+        
+    }
+
+    form > input[type=submit]:hover{
+
+        background-color: #205150;
+        text-decoration: underline;
+
+    }
+
+    form > a.botao{
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        background-color: #ffffff;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #205150;
+        margin-top: 4px;
+        color: #205150;
+        cursor:pointer;
+        text-decoration: none;
+        padding:  10px;
+    }
+
+    form > a.botao:hover{
+        background-color: var(--cor2) ;
+
+    }
+
+
+    form > a.botao > span {
+        font-size: .8em;
+    }
+
